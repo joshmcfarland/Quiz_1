@@ -42,17 +42,17 @@ student_dict = {student_file}
 #use a loop to iterate through each row of the file
 
     #check if the GPA is below 3.0. If so, write the record to the outfile
-start = 0
-for l in student_dict:
-       
-       
+for record in student_file:
+       if float(record[8]) < 3.0:
+           outfile.write(record[0] + "," + record[2] + "," + record[3] + 
+           ',' + record[6] + ',' + record[7] + ',' + record[8] + "\n")
+                 
 
 
 
     # append the record to the dictionary with the student id as the Key
     # and the value as the GPA
-    
-
+student_dict['stud_id'] = 'gpa'
 
 
 
@@ -61,10 +61,10 @@ for l in student_dict:
 print(student_dict)
 
 #Print the student id 
-print[stud_id]
+print(type(student_dict['stud_id']))
 
 #print out the corresponding GPA from the dictionary
-
+print(type(student_dict(['stud_id']['gpa'])))
 
 
 #close the outfile
