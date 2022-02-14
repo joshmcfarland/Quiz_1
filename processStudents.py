@@ -52,7 +52,7 @@ for record in student_file:
 
     # append the record to the dictionary with the student id as the Key
     # and the value as the GPA
-student_dict['stud_id'] = 'gpa'
+student_dict['stud_id'] = ('gpa')
 
 
 
@@ -64,7 +64,7 @@ print(student_dict)
 print(type(student_dict['stud_id']))
 
 #print out the corresponding GPA from the dictionary
-print(type(student_dict(['stud_id']['gpa'])))
+print(type(student_dict(['stud_id']['567890123']['gpa'])))
 
 
 #close the outfile
